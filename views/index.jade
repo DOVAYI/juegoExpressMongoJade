@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/creategamer" method="POST")
+    label(for="gamer") Nombre Jugador 
+    input(type="text" name="name")
+    input(type="submit" value="Guardar")
+  h3 Ver lista de jugadores 
+  button 
+    a(href="/gamerAll") Ver 
+  

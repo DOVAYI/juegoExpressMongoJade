@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Lista de Jugadores
+    #mostrar
+        ul
+            for val,key in iftion 
+                p #{val.name} 
+                input(type="number")
