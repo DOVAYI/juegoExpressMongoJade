@@ -1,5 +1,17 @@
+/**
+ * permite crear un Modelo basado en un esquema específico
+ */
 const mongoose = require('mongoose');
+
+/**
+ * esquemq  a seguir
+ */
 const Schema = mongoose.Schema;
+
+/**
+ * se instancia el objeto con esquema
+ * se definen los datos y los tipos de ellos
+ */
 
 const gamerSchema = new Schema({
     name: {
@@ -18,5 +30,3 @@ const gamerSchema = new Schema({
 
 module.exports = Gamer = mongoose.model('Gamer', gamerSchema);
 
-//video sofka minuto 49:19
-//1:18:45

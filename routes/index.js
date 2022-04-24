@@ -1,11 +1,19 @@
-var express = require('express');
-var router = express.Router();
+/**
+ * esta funcion permite cargar toda la funcionalidad de express
+ */
+const express = require('express');
 
-const gamer = require('../models/gamers');
-/* GET home page. */
-router.get('/', async (req, res, next) => {
-  
-res.render('index', {title:'Crear Jugadores'});
+/**
+ * manejador de ruta
+ */
+const router = express.Router();
+
+/**
+ * muestra la vista index.jade
+ */
+router.get('/', (req, res, next) => {
+
+    res.render('index', { title: 'Crear Jugadores' });
 
 });
 
