@@ -2,10 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to 
+  
   form(action="/creategamer" method="POST")
     label(for="gamer") Nombre Jugador 
-    input(type="text" name="name")
+    input(type="text", name="name", required)
     input(type="submit" value="Guardar")
   h3 Ver lista de jugadores 
   button 
